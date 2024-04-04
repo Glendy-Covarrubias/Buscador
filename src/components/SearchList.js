@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { List, Heading, Box, Center, NativeBaseProvider } from "native-base";
 
-const SearchList = () => {
+const SearchList = ({ navigation }) => {
 
     const [list, setList] = useState([
         'React Native',
@@ -13,7 +13,7 @@ const SearchList = () => {
         <List space={2} my={2}>
             {
                 list.map((e, index) =>
-                    <List.Item key={index}>{e}</List.Item>
+                    <List.Item key={index} onPress={() => navigation.navigate('WebView')}>{e}</List.Item>
                 )
             }
         </List>

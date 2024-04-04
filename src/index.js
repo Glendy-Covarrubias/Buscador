@@ -1,19 +1,27 @@
 import React from 'react';
-import { NativeBaseProvider, Center } from "native-base";
 
-import AppBar from './components/AppBar';
-import Search from './components/Search';
-import SearchTab from './components/SearchTab';
+import { NavigationContainer } from '@react-navigation/native';
+import { NativeBaseProvider, Center } from "native-base";
+import { createStackNavigator } from '@react-navigation/stack';
+
+import HomeScreen from './components/HomeScreen';
+import SearchScreen from './components/SearchScreen';
+import WebViewScreen from './components/WebViewScreen';
+
+const Stack = createStackNavigator();
+let StackNav = <Stack.Navigator>
+    <Stack.Screen options={{ title: 'EDsearch' }} name="EDsearch" component={HomeScreen} />
+    <Stack.Screen options={{ title: '' }} name="Busqueda" component={SearchScreen} />
+    <Stack.Screen options={{ title: 'WEB VIEW' }} name="WebView" component={WebViewScreen} />
+</Stack.Navigator>;
 
 const App = () => {
     return (
-        <NativeBaseProvider>
-            <AppBar />
-            <Center>
-                <Search />
-            </Center>
-            <SearchTab />
-        </NativeBaseProvider>
+        <NavigationContainer>
+            <NativeBaseProvider>
+                {StackNav}
+            </NativeBaseProvider>
+        </NavigationContainer>
     );
 }
 
