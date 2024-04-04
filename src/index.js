@@ -1,11 +1,19 @@
 import React from 'react';
-import { View, Text } from "react-native";
+import { NativeBaseProvider, Center } from "native-base";
+
+import AppBar from './components/AppBar';
+import Search from './components/Search';
+import SearchTab from './components/SearchTab';
 
 const App = () => {
     return (
-        <View>
-            <Text>Glendy</Text>
-        </View>
+        <NativeBaseProvider>
+            <AppBar />
+            <Center>
+                <Search />
+            </Center>
+            <SearchTab />
+        </NativeBaseProvider>
     );
 }
 
