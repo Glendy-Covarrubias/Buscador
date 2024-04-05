@@ -16,8 +16,8 @@ const SearchList = ({ navigation, searchArray }) => {
             <Box w="100%">
                 <List space={2} my={2}>
                     {
-                        searchArray.map((e) =>
-                            <List.Item key={e.id} onPress={() => navigation.navigate('WebView')}>
+                        searchArray.map((e, i) =>
+                            <List.Item key={i} onPress={() => navigation.navigate('WebView', { url: e.link})}>
                                 <Text>
                                     {e.title}
                                 </Text>

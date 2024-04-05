@@ -1,12 +1,38 @@
-import React from "react";
-import { Button, Center } from "native-base";
+import React, { useEffect, useState } from "react";
+import { Button, Center, Spinner } from "native-base";
+import { WebView } from 'react-native-webview';
 
-function WebViewScreen({ navigation }) {
+function WebViewScreen({ navigation, route }) {
+    const [isLoading, setIsLoading] = useState(false);
+    const [url, setUrl] = useState(null);
+
+    useEffect(() => {
+        if (route.params?.url) {
+            setUrl(route.params.url)
+        }
+
+    }, [route.params?.url])
+
+    if (url === null) return null;
+
     return (
         <>
-            <Center flex={1}>
-                <Button> WEB VIEW </Button>
-            </Center>
+            {
+                isLoading && !url ?
+                    <Spinner />
+                    :
+                    <WebView
+                        source={{ uri: url }}
+                        onLoadStart={() => {
+                            setIsLoading(true);
+                        }}
+                        onLoadEnd={()=>{
+                            setIsLoading(false);
+                        }}
+                        style={{ width: "100%" }}
+                    />
+            }
+
         </>
     );
 }

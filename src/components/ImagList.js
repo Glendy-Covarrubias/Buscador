@@ -15,10 +15,10 @@ const ImagList = ({ navigation, searchArray }) => {
         <ScrollView>
             <VStack space={3}>
                 {
-                    searchArray.map((e) =>
-                        <Center>
+                    searchArray.map((e, i) =>
+                        <Center key={i}>
                             <Image
-                                key={e._id}
+                                key={i}
                                 source={{
                                     uri: e.image
                                 }} alt={e.title} size="xl" />
