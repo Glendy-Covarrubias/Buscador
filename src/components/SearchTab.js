@@ -3,9 +3,10 @@ import { View, StyleSheet, Dimensions } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 
 import SearchList from './SearchList';
+import ImagList from "./ImagList";
 
 
-function SearchTab({ navigation }) {
+function SearchTab({ navigation, searchArray }) {
 
     const [index, setIndex] = useState(0);
     const [routes] = useState([
@@ -15,12 +16,14 @@ function SearchTab({ navigation }) {
 
     const FirstRoute = () => (
         <>
-            <SearchList navigation={navigation} />
+            <SearchList searchArray={searchArray} navigation={navigation} />
         </>
     );
 
     const SecondRoute = () => (
-        <View style={[styles.scene, { backgroundColor: '#673ab7' }]} />
+        <>
+            <ImagList searchArray={searchArray} navigation={navigation} />
+        </>
     );
 
     return (
