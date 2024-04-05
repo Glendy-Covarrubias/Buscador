@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input, Box, VStack, Divider, Heading, Spinner } from "native-base";
+import { Input, VStack, Spinner } from "native-base";
 
 const Search = ({ navigation }) => {
     const [search, setSearch] = useState('');
@@ -10,7 +10,6 @@ const Search = ({ navigation }) => {
         setIsLoading(true);
         setInterval(() => {
             setIsLoading(false);
-            //navigation.navigate('Busqueda');
         }, 500)
 
     }
@@ -24,13 +23,10 @@ const Search = ({ navigation }) => {
                     py={3}
                     value={search}
                     onChange={() => navigation.navigate('Busqueda')}
-                    /* onChange={(value) => searchText(value)} */
                     placeholder="Search People & Places"
                     width="100%"
                     borderRadius="4"
                     fontSize="14"
-                    /* InputLeftElement={<Icon m="2" ml="3" size="6" color="gray.400" as={<MaterialIcons name="search" />} />} 
-                    */
                     InputRightElement={isLoading && <Spinner size={"md"} marginRight={2} />}
                 />
             </VStack>

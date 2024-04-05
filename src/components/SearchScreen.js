@@ -6,7 +6,7 @@ function SearchScreen({ navigation }) {
     return (
         <>
             <Center>
-                <Search/>
+                <Search />
             </Center>
         </>
     );

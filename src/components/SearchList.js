@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { List, Heading, Box, Center, NativeBaseProvider } from "native-base";
+import { List, Box } from "native-base";
 
 const SearchList = ({ navigation }) => {
 

@@ -8,9 +8,9 @@ function HomeScreen({ navigation }) {
     return (
         <>
             <Center>
-                <Search navigation={navigation}/>
+                <Search navigation={navigation} />
             </Center>
-            <SearchTab navigation={navigation}/>
+            <SearchTab navigation={navigation} />
         </>
     );
 }

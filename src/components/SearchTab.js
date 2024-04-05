@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Dimensions, StatusBar, Center, Text, Box, Pressable } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 
 import SearchList from './SearchList';
