@@ -80,6 +80,7 @@ To learn more about React Native, take a look at the following resources:
 
 # Example APP 
 Screens
+
 <img width="210" alt="Screenshot" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/b5142dcf-39f3-4911-9ce8-ebdf57f02a56">
 
 <img width="207" alt="Screenshot_1" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/34170948-0b34-4db3-9cf4-595106ad19ab">
