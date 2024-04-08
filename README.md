@@ -77,3 +77,17 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+# Example APP 
+Screens
+<img width="210" alt="Screenshot" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/b5142dcf-39f3-4911-9ce8-ebdf57f02a56">
+
+<img width="207" alt="Screenshot_1" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/34170948-0b34-4db3-9cf4-595106ad19ab">
+
+<img width="204" alt="Screenshot_2" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/168c2992-b53e-4c29-8861-7fbeb21008a4">
+
+<img width="201" alt="Screenshot_3" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/84697ce5-ebca-428d-a286-cb2e0ab753cd">
+
+<img width="202" alt="Screenshot_4" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/85238c38-9fe5-46a1-ac3c-60c38dd336d4">
+
+<img width="203" alt="Screenshot_6" src="https://github.com/Glendy-Covarrubias/Buscador/assets/18608829/a09ee444-bc49-43dc-bbb5-70026bacb18e">
